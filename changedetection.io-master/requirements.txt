@@ -1,0 +1,29 @@
+flask~= 1.0
+
+eventlet>=0.31.0
+validators
+timeago ~=1.0
+inscriptis ~= 1.2
+feedgen ~= 0.9
+flask-login ~= 0.5
+pytz
+
+# Set these versions together to avoid a RequestsDependencyWarning
+requests[socks] ~= 2.26
+urllib3 > 1.26
+chardet > 2.3.0
+
+wtforms ~= 2.3.3
+jsonpath-ng ~= 1.5.3
+
+# Notification library
+apprise ~= 0.9
+
+# Pinned version of cryptography otherwise
+# ERROR: Could not build wheels for cryptography which use PEP 517 and cannot be installed directly
+cryptography ~= 3.4
+
+# Used for CSS filtering, replace with soupsieve and lxml for xpath
+bs4
+
+selenium ~= 3.141
